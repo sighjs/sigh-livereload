@@ -1,6 +1,6 @@
 {
   "name": "sigh-livereload",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "sigh plugin for livereload.",
   "scripts": {
     "test": "sigh"
@@ -18,7 +18,7 @@
     "livereload"
   ],
   "author": "James Pike <github@chilon.net>",
-  "license": "GPL",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sighjs/sigh-sass/issues"
   },
@@ -30,12 +30,8 @@
     "superagent-as-promised": "^3.1.1",
     "tiny-lr": "^0.1.5"
   },
-  "peerDependencies": {
-    "sigh": ">=0.12.6 <0.14.0"
-  },
   "devDependencies": {
     "babel": "^5.2.9",
-    "bluebird": "^2.9.24",
     "chai": "^2.3.0",
     "mocha": "^2.2.4",
     "sigh": "^0.12.7",
