@@ -11,13 +11,13 @@ Livereload server.
 var livereload, glob, write, sass
 
 module.exports = function(pipelines) {
-  pipelines['build:source'] = [
-    var globOpts = { basePath: 'src' }
+  var globOpts = { basePath: 'src' }
 
+  pipelines['build:source'] = [
     merge(
-      [ glob(globOpts, '**/*.js'), babel() ]
+      [ glob(globOpts, '**/*.js'), babel() ],
       [ glob(globOpts, '**/*.scss') sass() ]
-    )
+    ),
     write('build/assets'),
     livereload(),
   ]
